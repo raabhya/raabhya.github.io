@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Raabhya Aggarwal</title>
+<meta name="description" content="Raabhya Aggarwal: Mathematics student at Gargi College, University of Delhi. Economics, finance, sudoku, running, F1 and books.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,300;1,9..144,500&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="scene" aria-hidden="true"></canvas>
+<div class="cursor" id="cursor" aria-hidden="true"></div>
+
+<nav id="nav">
+  <a href="#top" class="logo" aria-label="Back to top">R<span>A</span></a>
+  <ul class="links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#work">Work</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#play">Play</a></li>
+    <li><a href="#writing">Writing</a></li>
+    <li><a href="#connect">Connect</a></li>
+  </ul>
+  <div class="nav-tools">
+    <button class="pill" id="themeBtn" aria-label="Switch colour theme">Lumos</button>
+    <button class="pill" id="paletteBtn" aria-label="Open menu"><span class="desk">Press</span> <kbd>/</kbd><span class="mob">Menu</span></button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero" id="top" data-shape="0">
+  <div class="hero-inner">
+    <p class="kicker">Delhi, India · Mathematics · Economics</p>
+    <h1 id="name" aria-label="Raabhya Aggarwal"><span class="line">Raabhya</span><span class="line accent">Aggarwal</span></h1>
+    <p class="hero-lede">I think in equations, run on curiosity, and read everything from balance sheets to spellbooks.</p>
+    <div class="hero-meta">
+      <span>Final-year Mathematics</span><span>Gargi College, University of Delhi</span><span>Minor in Economics</span>
+    </div>
+  </div>
+  <a href="#about" class="scroll-cue" aria-label="Scroll to about">
+    <span>scroll</span><i></i>
+  </a>
+  <p class="hero-hint">Move your cursor. The shape is listening.</p>
+</header>
+
+<main>
+
+<!-- ABOUT -->
+<section id="about" data-shape="1">
+  <div class="wrap">
+    <div class="head reveal"><span class="idx">01</span><h2>A quick <em>proof</em> of who I am</h2></div>
+
+    <div class="about-grid">
+      <div class="stack reveal" id="stack" role="button" tabindex="0" aria-label="Photo stack, click to see the next photo">
+        <figure class="polaroid" data-i="0"><img src="raabhya.jpg" alt="Raabhya Aggarwal sitting on a teal sofa"><figcaption>hi, that's me</figcaption></figure>
+        <figure class="polaroid" data-i="1"><img src="maths.jpg" alt="Tablet with handwritten integral working beside a laptop"><figcaption>late-night integrals</figcaption></figure>
+        <figure class="polaroid" data-i="2"><img src="escalator.jpg" alt="Metro escalator with geometry sketched over it"><figcaption>maths, everywhere</figcaption></figure>
+        <span class="stack-hint">tap to shuffle</span>
+      </div>
+
+      <div class="about-text reveal">
+        <p class="big">I'm a final-year Mathematics student at Gargi College, University of Delhi, with a Minor in Economics. I like problems that have a clean answer and people who argue about the ones that don't.</p>
+
+        <p class="eq-label">Hover (or tap) each term:</p>
+        <div class="equation" id="equation">
+          <span class="fx">f(<b>me</b>) =</span>
+          <span class="term" tabindex="0" data-tip="My major. The language I think in.">Mathematics</span><span class="op term-op" tabindex="0" data-tip="Multiplied, not added: each one makes the other more useful.">×</span>
+          <span class="term" tabindex="0" data-tip="My minor. Where the maths meets people and money.">Economics</span><span class="op">+</span>
+          <span class="term" tabindex="0" data-tip="Daily puzzle. There's a playable one further down.">Sudoku</span><span class="op">+</span>
+          <span class="term" tabindex="0" data-tip="Where I untangle the problems that won't solve at a desk.">Running</span><span class="op">+</span>
+          <span class="term" tabindex="0" data-tip="Race weekends are non-negotiable.">F1</span><span class="op">+</span>
+          <span class="term" tabindex="0" data-tip="Self-help, money, leadership, and Harry Potter on repeat. Pull one off my shelf below.">Books</span>
+        </div>
+
+        <dl class="facts">
+          <div><dt>Based in</dt><dd>Delhi, India</dd></div>
+          <div><dt>Studying</dt><dd>B.Sc. (Hons.) Mathematics</dd></div>
+          <div><dt>Minor</dt><dd>Economics</dd></div>
+          <div><dt>Reading</dt><dd>How to Think Like Sherlock Holmes</dd></div>
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WORK -->
+<section id="work" data-shape="2">
+  <div class="wrap">
+    <div class="head reveal"><span class="idx">02</span><h2>Things I've <em>done</em></h2></div>
+
+    <div class="work-list">
+      <article class="job reveal">
+        <div class="when">2026 – 27 <b class="live">Ongoing</b></div>
+        <div class="job-body">
+          <h3>Undergraduate Dissertation</h3>
+          <p class="org">Department of Mathematics, Gargi College</p>
+          <p>Bus Stop Location Problem using Optimization: modelling where a city should place its stops to balance walking distance against travel time, with Portland as the case study.</p>
+          <a class="gh" href="https://github.com/raabhya/bus-stop-location-portland" target="_blank" rel="noopener">
+            <svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+            View project data on GitHub
+          </a>
+        </div>
+      </article>
+
+      <article class="job reveal">
+        <div class="when">Summer 2026</div>
+        <div class="job-body">
+          <h3>Intern</h3>
+          <p class="org">Draupadi Dream Trust · under the guidance of Neera Misra</p>
+          <p>Worked on analytical projects and researched material, from books and online sources, for the Trust's publishing work.</p>
+          <button class="cert" data-full="cert-internship.jpg" data-alt="Certificate of Volunteering and Internship, Draupadi Dream Trust"><img src="cert-internship.jpg" alt=""><span><small>Certificate</small>Volunteering &amp; Internship</span></button>
+        </div>
+      </article>
+
+      <article class="job reveal">
+        <div class="when">2025 – 26</div>
+        <div class="job-body">
+          <h3>President</h3>
+          <p class="org">MATHEMA, The Mathematics Association, Gargi College</p>
+          <p>Led the department's student association for the year: steering the team, planning events and representing mathematics students across the college.</p>
+          <button class="cert" data-full="cert-president.jpg" data-alt="Certificate of Appreciation, President of MATHEMA 2025 to 2026"><img src="cert-president.jpg" alt=""><span><small>Certificate</small>Appreciation · President</span></button>
+        </div>
+      </article>
+
+      <article class="job reveal">
+        <div class="when">2024 – 25</div>
+        <div class="job-body">
+          <h3>Editorial Co-Head</h3>
+          <p class="org">MATHEMA, The Mathematics Association, Gargi College</p>
+          <p>Co-led the association's editorial work: commissioning and editing content and making mathematics readable for a wider audience.</p>
+          <button class="cert" data-full="cert-editorial.jpg" data-alt="Certificate of Appreciation, Editorial Co-Head 2024 to 2025"><img src="cert-editorial.jpg" alt=""><span><small>Certificate</small>Appreciation · Editorial Co-Head</span></button>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" data-shape="3">
+  <div class="wrap">
+    <div class="head reveal"><span class="idx">03</span><h2>What I <em>work with</em></h2></div>
+    <div class="skills reveal">
+      <div class="skill-groups">
+        <div class="sgroup">
+          <p class="glabel">Analysis</p>
+          <div class="skill-chips">
+            <button class="skill on" data-k="python">Python</button>
+            <button class="skill" data-k="sql">SQL</button>
+            <button class="skill" data-k="r">R</button>
+            <button class="skill" data-k="stats">Statistics</button>
+            <button class="skill" data-k="excel">Excel</button>
+            <button class="skill" data-k="vba">VBA</button>
+            <button class="skill" data-k="macros">Macros</button>
+          </div>
+        </div>
+        <div class="sgroup">
+          <p class="glabel">Creative</p>
+          <div class="skill-chips">
+            <button class="skill" data-k="html">HTML</button>
+            <button class="skill" data-k="css">CSS</button>
+          </div>
+        </div>
+        <p class="skill-hint">Click a skill to see it in action.</p>
+      </div>
+      <div class="codewin" aria-live="polite">
+        <div class="codebar"><i></i><i></i><i></i><span id="codeFile">analysis.py</span></div>
+        <pre><code id="code"></code><span class="caret"></span></pre>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PLAY -->
+<section id="play" data-shape="4">
+  <div class="wrap">
+    <div class="head reveal"><span class="idx">04</span><h2>Off the <em>clock</em></h2></div>
+    <p class="sub reveal">F1, sudoku, running and a lot of books.</p>
+
+    <div class="play-grid">
+
+      <!-- F1 lights out -->
+      <div class="card f1 reveal" id="f1">
+        <div class="f1-photo"><img src="f1.jpg" alt="F1 cars racing through a corner at night"></div>
+        <div class="card-top"><span class="tag">F1</span><h3>Lights out</h3></div>
+        <p class="card-sub">Five red lights. When they go out, tap as fast as you can. Jump the start and it's a penalty.</p>
+        <div class="gantry" id="gantry" role="button" tabindex="0" aria-label="Reaction game. Press to start, then press again when the lights go out.">
+          <div class="lamp"><i></i><i></i></div><div class="lamp"><i></i><i></i></div><div class="lamp"><i></i><i></i></div><div class="lamp"><i></i><i></i></div><div class="lamp"><i></i><i></i></div>
+        </div>
+        <div class="f1-read">
+          <div><small>Status</small><b id="f1Status">Tap the gantry to start</b></div>
+          <div><small>Your time</small><b id="f1Time">--</b></div>
+          <div><small>Best</small><b id="f1Best">--</b></div>
+        </div>
+      </div>
+
+      <!-- Sudoku -->
+      <div class="card sudoku reveal" id="sudoku">
+        <div class="card-top"><span class="tag">Sudoku</span><h3>Beat the grid</h3></div>
+        <p class="card-sub">A quick 6 × 6: every row, column and box gets 1 to 6 once.</p>
+        <div class="sgrid" id="sgrid" aria-label="Sudoku grid"></div>
+        <div class="pad" id="pad"></div>
+        <div class="s-foot"><span id="sMsg">Pick a cell, then a number.</span><button class="mini" id="sNew">New puzzle</button></div>
+      </div>
+
+      <!-- Running -->
+      <div class="card run reveal">
+        <div class="run-photo"><img src="running.jpg" alt="Raabhya after a run, with earphones in"></div>
+        <div class="card-top"><span class="tag">Running</span><h3>Post-run, still smiling</h3></div>
+        <p class="card-sub">Running is where I untangle the problems that won't solve at a desk.</p>
+      </div>
+
+      <!-- Bookshelf -->
+      <div class="card shelf-card reveal" id="books">
+        <div class="card-top"><span class="tag">Books</span><h3>My shelf</h3><button class="mini pick" id="pickBook">Pick one for me</button></div>
+        <p class="card-sub">Mostly self-help, money and leadership, plus one series I'll never stop rereading. Pull a book out.</p>
+        <div class="shelf-wrap">
+          <div class="shelf" id="shelf">
+            <button class="spine current" style="--h:92%;--c:#2c3e50" data-title="Mastermind: How to Think Like Sherlock Holmes" data-author="Maria Konnikova" data-note="Training the mind to observe properly before it jumps to conclusions, the way Holmes does.">Sherlock Holmes</button>
+            <button class="spine" style="--h:96%;--c:#b8892f" data-title="The Success Principles" data-author="Jack Canfield" data-note="Practical principles for setting goals and taking full responsibility for where you end up.">Success Principles</button>
+            <button class="spine" style="--h:84%;--c:#7a2f2f" data-title="Leaders Eat Last" data-author="Simon Sinek" data-note="Why the best leaders put their team's trust and safety ahead of their own interests.">Leaders Eat Last</button>
+            <button class="spine" style="--h:100%;--c:#1f7a8c" data-title="The World Is Flat" data-author="Thomas L. Friedman" data-note="How technology and globalisation levelled the playing field of the modern economy.">The World Is Flat</button>
+            <button class="spine" style="--h:80%;--c:#4b6b3a" data-title="The 4-Hour Workweek" data-author="Tim Ferriss" data-note="A rethink of work, time and freedom, with plenty of experiments in doing more with less.">4-Hour Workweek</button>
+            <button class="spine" style="--h:88%;--c:#5a4a7a" data-title="The Psychology of Money" data-author="Morgan Housel" data-note="Why money decisions are about behaviour more than maths. A useful reminder for a maths student.">Psychology of Money</button>
+            <button class="spine" style="--h:76%;--c:#8a5a2b" data-title="Rich Dad Poor Dad" data-author="Robert Kiyosaki" data-note="Two very different sets of lessons about money, assets and financial independence.">Rich Dad Poor Dad</button>
+            <button class="spine" style="--h:90%;--c:#5b1f2a" data-title="Harry Potter" data-author="J.K. Rowling" data-note="Not self-help, but it has definitely helped. A fanatic, officially, with countless rereads.">Harry Potter</button>
+            <button class="spine q" style="--h:64%;--c:transparent" data-title="Your recommendation" data-author="This spot is empty" data-note="Got a book I should read next? Tell me below and it might end up here.">?</button>
+          </div>
+          <div class="book-detail" id="bookDetail" aria-live="polite">
+            <span class="badge" id="bdBadge">Currently reading</span>
+            <h4 id="bdTitle">Mastermind: How to Think Like Sherlock Holmes</h4>
+            <p class="bd-author" id="bdAuthor">Maria Konnikova</p>
+            <p id="bdNote">Training the mind to observe properly before it jumps to conclusions, the way Holmes does.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- WRITING -->
+<section id="writing" data-shape="5">
+  <div class="wrap">
+    <div class="head reveal"><span class="idx">05</span><h2>Sometimes I <em>write</em></h2></div>
+    <a class="paper reveal" href="https://substack.com/@raabhya282" target="_blank" rel="noopener">
+      <span class="paper-tag">On Substack</span>
+      <p class="typed"><span id="typed"></span><span class="caret"></span></p>
+      <p class="paper-sub">Longer thoughts that don't fit in a caption: books, ideas and whatever I'm figuring out at the moment.</p>
+      <span class="paper-cta">Read my writing ↗</span>
+    </a>
+  </div>
+</section>
+
+<!-- CONNECT -->
+<section id="connect" data-shape="6">
+  <div class="wrap">
+    <div class="head reveal"><span class="idx">06</span><h2>Let's <em>connect</em></h2></div>
+
+    <div class="connect reveal">
+      <p class="c-q">I'd love to hear from you if you're into…</p>
+      <div class="chips" id="chips" role="tablist">
+        <button class="chip on" data-sub="Hello from your portfolio" data-line="Finance, markets, a good finance book: I'm always up for that conversation.">Finance</button>
+        <button class="chip" data-sub="Hello from a fellow techie" data-line="Building something with data or code? I'd love to hear about it.">Tech</button>
+        <button class="chip" data-sub="F1 talk" data-line="Strategy calls, tyre gambles, who drove the race of the season: pick your side.">F1</button>
+        <button class="chip" data-sub="Tennis?" data-line="In Delhi and up for a game? Let's book a court. Loser buys the drinks.">Tennis</button>
+        <button class="chip" data-sub="Hi Raabhya" data-line="Mathematics, books, a sudoku you can't crack: just say hi.">Something else</button>
+      </div>
+      <p class="c-line" id="cLine">Finance, markets, a good finance book: I'm always up for that conversation.</p>
+
+      <div class="c-actions">
+        <a class="btn" id="mailBtn" href="mailto:raabhyabansal@gmail.com?subject=Hello%20from%20your%20portfolio">Email me ↗</a>
+        <a class="btn ghost" href="https://www.linkedin.com/in/raabhya-aggarwal/" target="_blank" rel="noopener">LinkedIn ↗</a>
+      </div>
+      <p class="c-mail">raabhyabansal@gmail.com · <button class="copy" id="copyBtn">copy</button></p>
+      <p class="c-resume">Prefer the paper version of me? <a href="https://drive.google.com/drive/folders/1yobtjq7--S3pc9Lzm_GVyknJBPdgC-Ti?usp=share_link" target="_blank" rel="noopener" class="quiet">Open it here.</a></p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <span>© 2026 Raabhya Aggarwal · Delhi, India</span>
+  <span class="mono">Tip: press <kbd>/</kbd> anywhere</span>
+</footer>
+
+<!-- Command palette -->
+<div class="palette" id="palette" role="dialog" aria-modal="true" aria-label="Menu">
+  <div class="pal-box">
+    <input id="palInput" type="text" placeholder="Type a command… (try “lumos”)" autocomplete="off" aria-label="Search commands">
+    <ul id="palList"></ul>
+    <p class="pal-foot"><kbd>↑</kbd><kbd>↓</kbd> move · <kbd>Enter</kbd> run · <kbd>Esc</kbd> close</p>
+  </div>
+</div>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Certificate">
+  <button aria-label="Close">×</button>
+  <img id="lbImg" src="" alt="">
+</div>
+
+<div class="toast" id="toast" role="status"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="scene.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
